@@ -1,0 +1,76 @@
+<<Big O notation>>
+-----------------------------------------
+
+Big O notation is a way of describing the performance or complexity of an algorithm. 
+It's particularly useful for understanding how the runtime of an algorithm grows as the size of the 
+input data increases.
+
+Here's a simplified explanation:
+
+Imagine you have a task to do, like finding a specific number in a list. 
+The time it takes to complete this task might depend on how many items are in the list.
+Big O notation helps us express how the time 
+(or sometimes space) required for the task grows as the size of the list increases.
+
+For example, let's say you have a list of numbers and you want to find a specific number in that list. 
+
+- If you use a simple approach like looking at each number one by one until you find the one you're looking for, 
+this might take longer as the list gets bigger. In Big O notation, we would say this algorithm has a linear time 
+complexity, denoted as O(n), where 'n' is the number of items in the list. 
+- On the other hand, if you use a more efficient approach like binary search (which only works on sorted lists), 
+the time it takes to find the number doesn't increase as much as the list grows. In Big O notation, we would say 
+this algorithm has a logarithmic time complexity, denoted as O(log n).
+
+Big O notation helps us compare the efficiency of algorithms and choose the most appropriate one for our needs. 
+It's like a shorthand way of saying "This algorithm is really fast, even as the input gets huge" or "This algorithm 
+will start to slow down a lot as the input grows."
+
+
+
+• Linear Time Complexity (O(n)):
+
+==> In linear time complexity, the time taken by an algorithm increases linearly with the size of the input.
+
+==> It means that if you double the size of the input data, the time taken to execute the algorithm also doubles.
+
+==> This is often represented mathematically as O(n), where 'n' represents the size of the input data.
+
+==> Example: Iterating through an array or a linked list once to perform some operation on each element.
+
+• Quadratic Time Complexity (O(n^2)):
+
+==> In quadratic time complexity, the time taken by an algorithm increases quadratically with the size of the input.
+
+==> It means that if you double the size of the input data, the time taken to execute the algorithm increases fourfold.
+
+==> This is often represented mathematically as O(n^2), where 'n' represents the size of the input data.
+
+==> Example: Nested loops where each loop iterates over the entire input data set. For example, a nested loop that compares each element of an array 
+with every other element.
+
+
+• Logarithmic Time Complexity (O(log n)):
+
+==> In logarithmic time complexity, the time taken by an algorithm increases logarithmically with the size of the input.
+
+==> It means that as the size of the input data increases, the time taken to execute the algorithm increases, but at a slower rate compared 
+to linear or quadratic time complexities.
+
+==> This is often represented mathematically as O(log n), where 'n' represents the size of the input data.
+Logarithmic time complexity commonly arises in algorithms that divide the problem space in half with each step, such as binary search on a 
+sorted array or tree traversal in balanced binary trees (like AVL trees or Red-Black trees).
+
+
+==> Example: Binary search algorithm, where with each comparison, the search space is halved until the target element is found.
+
+
+• Exponential Time Complexity (O(2^n)):
+==> In exponential time complexity, the time taken by an algorithm doubles with each addition to the input size.
+
+==> It means that for every additional element in the input, the time taken to solve the problem increases significantly.
+
+==> This is often represented mathematically as O(2^n), where 'n' represents the size of the input data.
+
+==> Exponential time complexity is commonly seen in algorithms that involve generating all possible subsets or permutations of a set, such as the brute-force approach to solving the traveling salesman problem or the subset sum problem.
+
+==> Example: The recursive solution for finding Fibonacci numbers without memoization, where each recursive call results in two more recursive calls.
